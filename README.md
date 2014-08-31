@@ -5,6 +5,29 @@ The project will simulate a simple computer system consisting of a CPU and Memor
 
 The CPU and Memory will be simulated by separate processes that communicate.
 
+How to run
+==========
+
+Just compile and run the CPU.c file. Keep the below files in the same directory.
+
+Files needed for the project: CPU.c(contains the code for the child and parent process), 
+
+memory.c(contains code for memory initialization and contains memory array), memory.h(contains 
+
+declaration of functions readMem() and writeMem()), program.txt(contains instruction numbers for the 
+
+program to be executed).
+
+Notes: Please ensure that you have an end instruction (30) in your program. Otherwise the execution 
+
+may not end.
+
+Sample program: I have included a sample program with the source code(program.txt). It takes in user 
+
+input number, squares it and displays it in the screen (no zero or negative number input).
+
+More information about the project
+==================================
 CPU
 
  It will have these registers: PC, SP, IR, AC, X, Y.
@@ -31,7 +54,7 @@ Memory
 
  There is no memory protection.
 
- Memory will initialize itself by reading a file named ìprogram.txtî beginning at address 0.
+ Memory will initialize itself by reading a file named ‚Äúprogram.txt‚Äù beginning at address 0.
 
  Each line in the file will hold one integer which may be an instruction or an operand.
 
@@ -42,6 +65,7 @@ Memory
  write(address, data) writes the data to the address
 
 Instruction set
+===============
 
  1 = Load value 
 
@@ -133,6 +157,7 @@ End execution
 
 
 Sample programs
+===============
 
 This program gets 3 integers the user types at the keyboard and sums them, then prints the result. 
 
